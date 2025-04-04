@@ -852,6 +852,68 @@ body {
   position: relative;
   z-index: 1;
 }
+.mentor-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.mentor-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.mentor-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Needed for the hover effect */
+  overflow: hidden;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+}
+
+.mentor-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease; /* Smooth transition for hover */
+  position: relative;
+  z-index: 1; /* Image comes first */
+}
+.mentor-card:hover img {
+  box-shadow: 0 0 0 5px #ba90f1; /* Teal glow */
+  transform: scale(1.05);
+}
+.mentor-card h3 {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+  order: 2; /* Name comes after image */
+}
+
+.mentor-card p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  order: 3; /* Expertise comes last */
+}
+
 
 
 
