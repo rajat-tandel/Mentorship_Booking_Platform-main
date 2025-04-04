@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfbff;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Dashboard Button */
+.dashboard-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.dashboard-btn:hover {
+  color: #b30086;
+  transform: scale(1.05);
+}
+
+/* Explore Button & Dropdown */
+.explore-container {
+  position: relative;
+}
+
+.explore-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+  color: #b30086;
+  transform: scale(1.05);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background: #e6cef6;
+  transform: scale(1.05);
+}
+.home-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+  
+}
+
+.home-btn:hover {
+  color: #b30086;
+  transform: scale(1.05);
+}
+/* Logout Button */
+.logout-btn {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #d4b3ff;
+  transition: background 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #9c6ff6;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  font-size: 40px;
+  color: #b30086;
+}
+
+.meeting-section {
+  margin-top: 40px;
+  text-align: left;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-section h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.meeting-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.meeting-section li {
+  font-size: 18px;
+  padding: 8px 0;
+}
+.meeting-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.join-meeting-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.join-meeting-btn:hover {
+  background-color: #0056b3;
+}
