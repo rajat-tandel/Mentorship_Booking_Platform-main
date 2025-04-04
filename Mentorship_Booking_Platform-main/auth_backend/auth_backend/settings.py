@@ -76,7 +76,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'WORKCOHOL',  # Fixed database name case
         'USER': 'root',
-        'PASSWORD': 'T@ndel20',
+        'PASSWORD': 'your_password',
         'HOST': '127.0.0.1',  # Keep localhost for local MySQL
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},  # Unicode support
