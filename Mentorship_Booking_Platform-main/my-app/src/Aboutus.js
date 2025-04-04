@@ -28,6 +28,12 @@ function Aboutus() {
         }
       };
     }, [animated]);
+    const mentors = [
+      { name: "Rajat Tandel", image: "/Rajat.jpg" },
+      { name: "J Michael jebaraj",  image: "/Michael.jpg" },
+      { name: "Abhishek Sarsiha",  image: "/Abhishek.jpg" },
+      { name: "R.Ascilin Raj",  image: "/Ascilin.jpg" },
+    ];
 
   return (
     <div className="container">
@@ -40,8 +46,6 @@ function Aboutus() {
         </div>
 
       </nav>
-
-      {/* About Us Section */}
       <section className="aboutus-content">
         <h1>About Us</h1>
         <p>
@@ -53,6 +57,23 @@ function Aboutus() {
           Our mentors come from diverse backgrounds and have years of experience in guiding 
           professionals, students, and entrepreneurs toward success.
         </p>
+
+     {/* About Us Section */}
+
+        
+        {/* Mentor Section */}
+        <div className="mentor-section" ref={missionRef}>
+          <h2>Our Team</h2>
+          <div className="mentor-grid">
+            {mentors.map((mentor, index) => (
+              <div key={index} className="mentor-card">
+                <img src={mentor.image} alt={mentor.name} />
+                <h3>{mentor.name}</h3>
+                <p>{mentor.expertise}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Footer */}
