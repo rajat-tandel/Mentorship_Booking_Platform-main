@@ -925,7 +925,7 @@ body {
   max-width: 1200px;
 }
 
-.mentor-card {
+.mentor-card-1 {
   background: white;
   border-radius: 10px;
   padding: 1.5rem;
@@ -938,11 +938,11 @@ body {
   overflow: hidden;
 }
 
-.mentor-card:hover {
+.mentor-card-1:hover {
   transform: translateY(-5px);
 }
 
-.mentor-card img {
+.mentor-card-1 img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -952,17 +952,17 @@ body {
   position: relative;
   z-index: 1; /* Image comes first */
 }
-.mentor-card:hover img {
+.mentor-card-1:hover img {
   box-shadow: 0 0 0 5px #ba90f1; /* Teal glow */
   transform: scale(1.05);
 }
-.mentor-card h3 {
+.mentor-card-1 h3 {
   margin: 0.5rem 0;
   color: #2c3e50;
   order: 2; /* Name comes after image */
 }
 
-.mentor-card p {
+.mentor-card-1 p {
   color: #7f8c8d;
   font-size: 0.9rem;
   order: 3; /* Expertise comes last */
