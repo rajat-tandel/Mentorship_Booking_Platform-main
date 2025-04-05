@@ -70,7 +70,7 @@ function AboutUsBefore() {
           <h2>Our Team</h2>
           <div className="mentor-grid">
             {mentors.map((mentor, index) => (
-              <div key={index} className="mentor-card">
+              <div key={index} className="mentor-card-1">
                 <img src={mentor.image} alt={mentor.name} />
                 <h3>{mentor.name}</h3>
                 <p>{mentor.expertise}</p>
